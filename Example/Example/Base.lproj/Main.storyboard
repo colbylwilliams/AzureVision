@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5eH-u9-qgo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="8l1-iS-rZq">
+            <objects>
+                <navigationController id="5eH-u9-qgo" customClass="NavigationController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZJ2-8L-WGE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bf8-xA-A4z" kind="relationship" relationship="rootViewController" id="j4j-TX-znb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Meb-8y-1ii" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="118"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JgM-9I-g4C">
+            <objects>
+                <viewController id="bf8-xA-A4z" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JPJ-ft-qTK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPt-35-8P0">
+                                <rect key="frame" x="80" y="263.5" width="215" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SPt-35-8P0" secondAttribute="height" multiplier="23:15" id="QSf-MM-cV8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTouchUpInside:" destination="bf8-xA-A4z" eventType="touchUpInside" id="EhF-cp-b15"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SPt-35-8P0" firstAttribute="leading" secondItem="tvO-Lx-pdR" secondAttribute="leading" constant="80" id="D33-W2-9AS"/>
+                            <constraint firstItem="SPt-35-8P0" firstAttribute="centerY" secondItem="JPJ-ft-qTK" secondAttribute="centerY" id="Wae-it-pbD"/>
+                            <constraint firstItem="SPt-35-8P0" firstAttribute="centerX" secondItem="JPJ-ft-qTK" secondAttribute="centerX" id="gsO-a5-bzg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tvO-Lx-pdR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RbH-Tn-2bm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vac-gg-5qZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="117"/>
+        </scene>
+    </scenes>
+</document>
