@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93050AE921514C0E0082DF65 /* ApiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93050AE821514C0E0082DF65 /* ApiTableViewController.swift */; };
 		93C307BA214C11C900401F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C307B9214C11C900401F7D /* AppDelegate.swift */; };
 		93C307BC214C11C900401F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C307BB214C11C900401F7D /* ViewController.swift */; };
 		93C307BF214C11C900401F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C307BD214C11C900401F7D /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		93050AE821514C0E0082DF65 /* ApiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTableViewController.swift; sourceTree = "<group>"; };
 		93C307B6214C11C900401F7D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C307B9214C11C900401F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93C307BB214C11C900401F7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				93C307BD214C11C900401F7D /* Main.storyboard */,
 				93C307BB214C11C900401F7D /* ViewController.swift */,
 				93C307D0214C2E7300401F7D /* NavigationController.swift */,
+				93050AE821514C0E0082DF65 /* ApiTableViewController.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93050AE921514C0E0082DF65 /* ApiTableViewController.swift in Sources */,
 				93C307BC214C11C900401F7D /* ViewController.swift in Sources */,
 				93C307D1214C2E7300401F7D /* NavigationController.swift in Sources */,
 				93C307BA214C11C900401F7D /* AppDelegate.swift in Sources */,

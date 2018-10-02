@@ -36,13 +36,16 @@ extension NavigationController: UIImagePickerControllerDelegate {
         for i in info { print("key: \(i.key.rawValue) \t\t\t value: \(i.value)") }
         
         let image: UIImage = (info[.originalImage] as! UIImage).cropToSquare()
-
-        
         
         print(image)
 
         //AzureVisionClient.shared.analyze(image: image, visualFeatures: [.adult, .categories, .color, .description, .faces, .imageType, .tags]) { response in
         //AzureVisionClient.shared.describe(image: image) { response in
+        
+        if let viewController = self.viewControllers.first as? ViewController {
+            viewController.imageView.image = image
+        }
+        
         AzureVisionClient.shared.ocr(image: image) { response in
             
             //response.printResult()

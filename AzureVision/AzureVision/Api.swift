@@ -43,6 +43,19 @@ enum Api {
         }
     }
     
+
+    // MARK: Container
+    
+    func url(forHost host: String, withQuery query: String? = nil) -> URL? {
+        return URL(string: urlString(forHost: host, withQuery: query))
+    }
+    
+    func urlString(forHost host: String, withQuery query: String? = nil) -> String {
+        return "https://" + host + "/" + Api.basePath + "/" + Api.version + "/" + self.path + query.valueOrEmpty
+    }
+
+    
+    // MARK: Azure
     
     func url(forRegion region: AzureRegion, withQuery query: String? = nil) -> URL? {
         return URL(string: urlString(forRegion: region, withQuery: query))

@@ -11,13 +11,15 @@ import AzureVision
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AzureVisionClient.shared.configure("OCP_APIM_SUBSCRIPTION_KEY", region: .eastUS)
+        AzureVisionClient.shared.configure(withSubscriptionKey: "OCP_APIM_SUBSCRIPTION_KEY", subscriptionRegion: .eastUS)
     }
 
-    @IBAction func buttonTouchUpInside(_ sender: Any) {
+    @IBAction func cameraButtonTouched(_ sender: Any) {
         (navigationController as? NavigationController)?.takePicture()
     }
 }
